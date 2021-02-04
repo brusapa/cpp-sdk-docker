@@ -2,7 +2,7 @@ FROM debian:latest
 
 # Install C/C++ development software
 RUN apt-get update && apt-get install -y gcc g++ make cmake gdb mingw-w64 && \
-    ln -s /usr(bin/make /usr/bin/gmake)
+    ln -s /usr/bin/make /usr/bin/gmake
 
 # # Install clangd-11, clang-tidy-11 and clang-format-11
 RUN apt-get update && \
